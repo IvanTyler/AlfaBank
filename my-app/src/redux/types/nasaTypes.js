@@ -1,0 +1,1 @@
+export const GET_NASA_DATA = 'GET_NASA_DATA'
