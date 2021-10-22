@@ -1,4 +1,7 @@
-import { GET_NASA_DATA } from "../types/nasaTypes";
+import { 
+    GET_NASA_DATA,
+    DELETE_NASA_POST 
+} from "../types/nasaTypes";
 import axios from 'axios'
 
 export const setNasaData = (NasaDataList) => {
@@ -7,6 +10,14 @@ export const setNasaData = (NasaDataList) => {
         payload: NasaDataList,
     }
 }
+
+export const deleteNasaPost = (deletePostId) => {
+    return {
+        type: DELETE_NASA_POST,
+        id: deletePostId,
+    }
+}
+
 
 export const getNasaData = () => async (dispatch) => {
     const nasaData = await axios.get('https://api.nasa.gov/planetary/apod?api_key=SewEbWvCMxUVt9pgAeNL3RWiAWgMDPbOaMLVLq8H&count=15')

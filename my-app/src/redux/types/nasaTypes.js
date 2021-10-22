@@ -1,1 +1,2 @@
 export const GET_NASA_DATA = 'GET_NASA_DATA'
+export const DELETE_NASA_POST = 'DELETE_NASA_POST'
