@@ -1,5 +1,15 @@
 .nasaList {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px -15px -15px;
+    margin: 0 -10px -10px -10px;
+}
+
+.buttonShowPosts {
+    color: #fff;
+    background-color: #17a2b8;
+    outline: none;
+    border: solid 1.5px #17a2b8;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
 }

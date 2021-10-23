@@ -1,2 +1,4 @@
 export const GET_NASA_DATA = 'GET_NASA_DATA'
 export const DELETE_NASA_POST = 'DELETE_NASA_POST'
+export const NASA_POST_LIKE = 'NASA_POST_LIKE'
+export const NASA_POST_FILTER = 'NASA_POST_FILTER'

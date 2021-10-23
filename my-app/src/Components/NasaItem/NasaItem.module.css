@@ -1,5 +1,5 @@
 .nasaItem {
-    width: calc(33.333% - 30px);
+    width: calc(33.333% - 20px);
     margin: 10px;
     box-shadow: 0 0 7px;
     border-radius: 5px;
@@ -17,6 +17,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px 5px 0 0;
 }
 
 .nasaInfo {
@@ -31,6 +32,7 @@
     color: #fff;
     padding: 15px;
     transition: 0.5s;
+    border-radius: 5px 5px 0 0;
 }
 .nasaTop:hover .nasaInfo {
     transform: translateY(0);
@@ -44,15 +46,17 @@
 .nasaLike {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
+    margin-right: 15px;
     background-image: url('./img/inlike-icon.png');
     background-size: cover;
     cursor: pointer;
     transition: 0.2s;
 }
 .nasaLike:hover {
+    transform: scale(1.1);
+}
+.active {
     background-image: url('./img/like-icon.png');
-    -webkit-transform: scale(1.1);
 }
 
 .nasaBottom {
@@ -64,9 +68,12 @@
 
 .nasaDelete {
     color: #fff;
+    background-color: transparent;
+    background-image: none;
+    outline: none;
+    border: solid 1.5px #dc3545;
     background-color: #dc3545;
-    border-color: #dc3545;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     cursor: pointer;
 }

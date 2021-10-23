@@ -3,6 +3,8 @@ import { initState } from "../initState"
 import {
     GET_NASA_DATA,
     DELETE_NASA_POST,
+    NASA_POST_LIKE,
+    NASA_POST_FILTER,
 } from "../types/nasaTypes"
 
 export const nasaReducer = (state = initState, action) => {
@@ -18,11 +20,26 @@ export const nasaReducer = (state = initState, action) => {
                 })
             }
         case DELETE_NASA_POST:
-            console.log(action.id)
             return {
                 ...state, nasaData: state.nasaData.filter(el => {
                     return el.id !== action.id
                 })
+            }
+        case NASA_POST_LIKE:
+            return {
+                ...state, nasaData: state.nasaData.map(el => {
+                    if (el.id === action.like) {
+                        return {
+                            ...el,
+                            like: !el.like
+                        }
+                    }
+                    return el
+                })
+            }
+        case NASA_POST_FILTER:
+            return {
+                ...state
             }
         default:
             return state

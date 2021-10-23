@@ -1,6 +1,8 @@
 import { 
     GET_NASA_DATA,
-    DELETE_NASA_POST 
+    DELETE_NASA_POST,
+    NASA_POST_LIKE,
+    NASA_POST_FILTER,
 } from "../types/nasaTypes";
 import axios from 'axios'
 
@@ -15,6 +17,19 @@ export const deleteNasaPost = (deletePostId) => {
     return {
         type: DELETE_NASA_POST,
         id: deletePostId,
+    }
+}
+
+export const nasaPostLike = (likePost) => {
+    return {
+        type: NASA_POST_LIKE,
+        like: likePost,
+    }
+}
+
+export const nasaFilterLike = () => {
+    return {
+        type: NASA_POST_FILTER,
     }
 }
 
