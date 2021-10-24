@@ -4,6 +4,17 @@
     box-shadow: 0 0 7px;
     border-radius: 5px;
 }
+@media (max-width: 1050px) {
+    .nasaItem {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 620px) {
+    .nasaItem {
+        width: calc(100% - 20px);
+    }
+}
+
 
 .nasaTop {
     display: flex;
@@ -11,6 +22,11 @@
     position: relative;
     overflow: hidden;
     height: 250px;
+}
+@media (max-width: 800px) {
+    .nasaTop {
+        height: 200px;
+    }
 }
 
 .nasaImg {
@@ -64,6 +80,8 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
 }
 
 .nasaDelete {

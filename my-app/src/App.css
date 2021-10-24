@@ -1,5 +1,12 @@
 .App {
     max-width: 1200px;
     margin: 30px auto 0;
+    padding: 20px;
+    background: rgba(155, 155, 155, 0.55);
+    box-shadow: 0 0 7px;
+    border-radius: 5px;
+}
+
+#root {
     padding: 0 20px;
 }

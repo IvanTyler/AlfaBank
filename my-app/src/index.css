@@ -7,3 +7,9 @@
   transition: 0.2s;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+body {
+  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/background_03.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
