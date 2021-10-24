@@ -13,8 +13,6 @@ function Nasa() {
         dispatch(getNasaData())
     }, [])
     const [flagFilter, setflagFilter] = useState(false);
-    const [text, setText] = useState('нет лайков');
-    const listPosts = useRef(null);
 
     const likePosts = (flagFilter) => {
         setflagFilter(!flagFilter)
@@ -38,7 +36,7 @@ function Nasa() {
                         : 'Показать посты с лайками'}
                 </button>
             }
-            <ul ref={listPosts} className={style.nasaList}>
+            <ul className={style.nasaList}>
                 {
                     nasaData.length ?
                         (flagFilter === true ? nasaData.filter(el => el.like === true) : nasaData).map((item) =>
